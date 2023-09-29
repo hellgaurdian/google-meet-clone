@@ -2,7 +2,7 @@
   "name": "google-meet-clone",
   "version": "1.0.0",
   "description": "a clone of a google meet",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

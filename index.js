@@ -23,7 +23,7 @@ mongoose
 
 app.get("/", (req, res) => {
   // Serve your ad here
-  res.send("Hello, world!");
+  res.status(200).json("welcome working fine")
 });
 
 app.listen(6969, () => {
