@@ -40,7 +40,7 @@ const Signin = async (req, res, next) => {
           withCredentials: true,
           httpOnly: false,
         });
-        res.status(201).json({
+        res.status(200).json({
           message: "User signed in successfully",
           success: true,
         });
@@ -62,7 +62,5 @@ const Signin = async (req, res, next) => {
     console.error(error);
   }
 };
-export default {
-  Signup,
-  Signin,
-};
+
+module.exports = { Signup, Signin };
