@@ -8,8 +8,6 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors());
 
-require("./Modals/UserModal");
-
 mongoose
   .connect(
     "mongodb+srv://vishwavijay:6cOOjfp3JvEji2J6@cluster0.p3vfbqx.mongodb.net/?retryWrites=true&w=majority",
@@ -23,7 +21,7 @@ mongoose
 
 app.get("/", (req, res) => {
   // Serve your ad here
-  res.status(200).json("welcome working fine")
+  res.status(200).json("welcome working fine");
 });
 
 app.listen(6969, () => {
