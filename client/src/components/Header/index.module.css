@@ -61,3 +61,16 @@
     font-weight: 500;
     color: rgb(95, 99, 104);
 }
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a73e8;
+    height: 25px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+
+}

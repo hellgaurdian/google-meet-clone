@@ -1,9 +1,11 @@
 import React,{useEffect,useState} from 'react'
 import styles from './index.module.css'
 import MainImage from '../../assets/meetmain.png'
-let logggedin=true
+import Login from '../Login'
+let logggedin=false
 export default function Index() {
 const [currentTime, setCurrentTime] = useState(getCurrentTime());
+const [loginOpen, setLoginOpen] = useState(false)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -62,9 +64,15 @@ function getCurrentDate() {
           {logggedin?
            <span className={styles["user"]}><span>V</span></span>
           :
-           <button></button>
+          
+           <div className={styles["button"]}
+           onClick={()=>setLoginOpen(true)}
+           ><span>Login</span></div>
           }
         </div>
+        <Login
+        open={loginOpen}
+        />
     </div>
   )
 }
